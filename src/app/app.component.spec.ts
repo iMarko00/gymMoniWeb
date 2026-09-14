@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'my-app-name' title`, () => {
+  it(`should have the application title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('my-app-name');
+    expect(app.title).toEqual('gym-moni-web');
   });
 
-  it('should render title', () => {
+  it('should render the GymMoni hero', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, my-app-name');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Train with a coach');
   });
 });

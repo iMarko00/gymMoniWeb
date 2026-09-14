@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "my-app-name": {
+    "gym-moni-web": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/my-app-name",
+            "outputPath": "dist/gym-moni-web",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -59,10 +59,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "my-app-name:build:production"
+              "buildTarget": "gym-moni-web:build:production"
             },
             "development": {
-              "buildTarget": "my-app-name:build:development"
+              "buildTarget": "gym-moni-web:build:development"
             }
           },
           "defaultConfiguration": "development"
